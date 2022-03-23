@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWICE SHOP</title>
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css Javascript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="mobile-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="#all-product">Sản phẩm</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+            <div class="header_shop">
+                <div class="login">
+                    LOGIN <i class="fa fa-user-o"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa fa-shopping-cart"></i><span id="cart_val"> 0</span>
+                </div>
+            </div>         
+        </header>
+
+        <div id="mobile-nav">
+            <a href="#">Trang chủ</a>
+            <a href="#all-product">Sản phẩm</a>
+            <a href="#contact">Liên hệ</a>
+        </div>
+
+        <section id="banner">
+            <div class="banner_text">
+                <p>TWICESHOP</p>
+                <p>Chuyên cung cấp các sản phẩm về TWICE</p>
+                <a href="#all-product">MUA NGAY</a>
+            </div>
+            <div class="banner_bottom">
+                <div class="banner_social">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="banner_copyright">
+                    <span>Copyright <i class="fa fa-copyright"></i> <span class="admin">Phunghuuloc</span> , 2022</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-twice">
+            <img src="images/aboutTwice.jpg" alt="TWICE">
+            <p class="about-twice_title">TWICE</p>
+            <p>TWICE là một nhóm nhạc KPOP đa quốc gia: Hàn Quốc - Nhật Bản - Đài Loan</p>
+            <a href="https://twice.jype.com/">Tìm hiểu thêm</a>
+            <hr>
+            <p class="about-twice_title">Màu chính thức của nhóm</p>
+            <div class="about-twice_color">
+                <div class="color apricot">
+                    <p>Apricot</p>
+                    <span>#F8C596</span>
+                </div>
+                <div class="color neon">
+                    <p>Neon Magenta</p>
+                    <span>#FC5D9D</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="youtube">
+            <h3>TWICE YOUTUBE</h3>
+            <div class="youtube_content">
+                <div class="youtube_content_img">
+                    <a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA"><img src="images/youtube.jpg"></a>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d-tXXHogBZY?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="product">
+            <div class="best-product">
+                <div class="best-product_item">
+                    <div class="left image">
+                        <img src="images/product/postcardCGV.jpg">
+                    </div>
+                    <div class="right info">
+                        <span class="best-product_title">Sản phẩm nổi bật</span>
+                        <p class="best-product_name">Bộ postcard CGV</p>
+                        <p class="best-product_price">1.399.000 VNĐ</p>
+                        <hr>
+                        <h3>Chọn thành viên</h3>
+                        <form action="">
+                            <div class="members">
+                                <input type="radio" id="nayeon" name="member" value="nayeon" checked>
+                                <label for="nayeon">Nayeon</label>
+                                <input type="radio" id="jeongyeon" name="member" value="jeongyeon">
+                                <label for="jeongyeon">Jeongyeon</label>
+                                <input type="radio" id="momo" name="member" value="momo">
+                                <label for="momo">Momo</label>
+                                <input type="radio" id="sana" name="member" value="sana">
+                                <label for="sana">Sana</label>
+                                <input type="radio" id="jihyo" name="member" value="jihyo">
+                                <label for="jihyo">Jihyo</label>
+                                <input type="radio" id="mina" name="member" value="mina">
+                                <label for="mina">Mina</label>
+                                <input type="radio" id="dahyun" name="member" value="dahyun">
+                                <label for="dahyun">Dahyun</label>
+                                <input type="radio" id="chaeyoung" name="member" value="chaeyoung">
+                                <label for="chaeyoung">Chaeyoung</label>
+                                <input type="radio" id="tzuyu" name="member" value="tzuyu">
+                                <label for="tzuyu">Tzuyu</label>
+                            </div>         
+                            <div class="number">
+                                <h3>Số lượng</h3>
+                                <input type="number" min="0" max="10" name="quantity" value="1">
+                            </div>
+                            <button type="submit">MUA NGAY</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="best-product_item">
+                    <div class="left image">
+                        <img src="images/product/bongchay.jpg">
+                    </div>
+                    <div class="right info">
+                        <span class="best-product_title">Sản phẩm nổi bật</span>
+                        <p class="best-product_name">Quả bóng chày</p>
+                        <p class="best-product_price">1.959.000 VNĐ</p>
+                        <hr>
+                        <h3>Chọn thành viên</h3>
+                        <form action="">
+                            <div class="members">
+                                <input type="radio" id="nayeon" name="member" value="nayeon" checked>
+                                <label for="nayeon">Nayeon</label>
+                                <input type="radio" id="jeongyeon" name="member" value="jeongyeon">
+                                <label for="jeongyeon">Jeongyeon</label>
+                                <input type="radio" id="momo" name="member" value="momo">
+                                <label for="momo">Momo</label>
+                                <input type="radio" id="sana" name="member" value="sana">
+                                <label for="sana">Sana</label>
+                                <input type="radio" id="jihyo" name="member" value="jihyo">
+                                <label for="jihyo">Jihyo</label>
+                                <input type="radio" id="mina" name="member" value="mina">
+                                <label for="mina">Mina</label>
+                                <input type="radio" id="dahyun" name="member" value="dahyun">
+                                <label for="dahyun">Dahyun</label>
+                                <input type="radio" id="chaeyoung" name="member" value="chaeyoung">
+                                <label for="chaeyoung">Chaeyoung</label>
+                                <input type="radio" id="tzuyu" name="member" value="tzuyu">
+                                <label for="tzuyu">Tzuyu</label>
+                            </div>         
+                            <div class="number">
+                                <h3>Số lượng</h3>
+                                <input type="number" min="0" max="10" name="quantity" value="1">
+                            </div>
+                            <button type="submit">MUA NGAY</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="best-product_item">
+                    <div class="left image">
+                        <img src="images/product/giayspris.jpg">
+                    </div>
+                    <div class="right info">
+                        <span class="best-product_title">Sản phẩm nổi bật</span>
+                        <p class="best-product_name">Giày Spris của Chaeyoung</p>
+                        <p class="best-product_price">4.999.000 VNĐ</p>
+                        <hr>
+                        <form action="">
+                            <div class="number">
+                                <h3>Số lượng</h3>
+                                <input type="number" min="0" max="10" name="quantity" value="1">
+                            </div>
+                            <button type="submit">MUA NGAY</button>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            <h3 id="all-product" class="all-product_title">Tất cả sản phẩm</h3>
+            <div class="all-product">
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/postcardCGV.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Bộ postcard CGV</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/bongchay.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Quả Bóng Chày</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/pinxachtay.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Pin Xách Tay</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/quat.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Quạt JYP Nation</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/aokcon2017.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Áo KCON NY</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/giayspris.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Giày Spris</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/lightstickcheerup.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Lightstick "Cheer Up"</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/cardsignal.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Card “Signal”</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/tainghe.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Tai Nghe TWICELAND</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/photocardlottestarwish.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Photocard Lotte Star Wish</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/keo.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Cây Kẹo Tại Shibuya 109</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/khan.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Khăn Pocari Sweat</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/photocardSSJYPN.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Photocard SuperStar</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/lich.png">
+                        </div>
+                        <div class="product_info">
+                            <p>Lịch Chicken Gamaro Ganjung</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-product_item">
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/photocardNature.jpg">
+                        </div>
+                        <div class="product_info">
+                            <p>Photocard Nature Collection</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_image">
+                            <img src="images/product/postcardtouchdown.jfif">
+                        </div>
+                        <div class="product_info">
+                            <p>Postcard Touchdown In Japan</p>
+                            <a href="#">Mua ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer_img">
+                <img src="images/06.jpg">
+            </div>
+            <div class="footer_twice">
+                <h4>TWICE</h4>
+                <a href="https://twice.jype.com/">Official Website</a>
+                <a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA">Youtube</a>
+                <a href="https://twitter.com/JYPETWICE/">Twitter</a>
+                <a href="https://www.instagram.com/twicetagram/">Instagram</a>
+                <a href="http://channels.vlive.tv/EDBF/video">Vlive</a>
+                <a href="https://www.tiktok.com/@twice_tiktok_official">Tik Tok</a>
+            </div>
+            <div class="footer_product">
+                <h4>Sản phẩm nổi bật</h4>
+                <p>Postcard CGV</p>
+                <p>Quả bóng chày</p>
+                <p>Giày Spris</p>
+            </div>
+            <div class="footer_admin">
+                <h4>Admin</h4>
+                <p>Phùng Hữu Lộc</p>
+                <p>huulocahri@gmail.com</p>
+                <p>0339329541</p>
+                <p>Bình Thuận</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
